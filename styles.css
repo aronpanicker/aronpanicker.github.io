@@ -1,0 +1,192 @@
+:root {
+  --width: 900px;
+  --bg: #f8f8f4;
+  --text: #1f1f1f;
+  --muted: #4e4e4e;
+  --line: #bfbfbf;
+  --link: #1f1f1f;
+  --link-hover: #8a3b12;
+  --menu-link: #2b4eb7;
+  --menu-hover: #b55216;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "courier new", courier, monospace;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+  word-break: break-word;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.site,
+.content {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.topbar {
+  margin-bottom: 18px;
+}
+
+.brand {
+  margin: 0 0 14px;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.brand a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav a {
+  color: var(--menu-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--menu-hover);
+}
+
+.card {
+  border: 0;
+  border-top: 1px dashed var(--line);
+  margin: 0;
+  padding: 10px 0 14px;
+}
+
+.card h1,
+.card h2,
+.card h3,
+.card h4 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.card h1.detail-title {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+.block {
+  padding: 0;
+}
+
+.block p {
+  margin: 0 0 12px;
+}
+
+.block ul,
+.block ol {
+  margin: 0 0 12px 1.2rem;
+  padding: 0;
+}
+
+.block li {
+  margin: 0 0 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 4px 6px 4px 0;
+  border-bottom: 1px solid #d9d9d9;
+  text-align: left;
+}
+
+code {
+  font-family: inherit;
+  font-size: 0.95em;
+  background: #efefe8;
+  padding: 1px 4px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dashed var(--line);
+}
+
+.footer {
+  border-top: 1px dashed var(--line);
+  margin-top: 72px;
+  padding-top: 48px;
+  padding-bottom: 20px;
+  color: var(--muted);
+  text-align: left;
+}
+
+.footer p {
+  margin: 0 0 8px;
+}
+
+.micro-note {
+  font-size: 0.72rem;
+  letter-spacing: 0.01em;
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 14px;
+    font-size: 17px;
+  }
+
+  .brand {
+    font-size: 1.35rem;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+}
+
+body > p.micro-note:first-of-type {
+  margin-top: 72px;
+  padding-top: 48px;
+  border-top: 1px dashed var(--line);
+}
+
+body > p.micro-note + p.micro-note {
+  margin-top: 6px;
+}
