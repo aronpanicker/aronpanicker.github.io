@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>aron panicker</title>
+  <rect width="64" height="64" fill="#c8bec3" />
+  <rect
+    x="4"
+    y="4"
+    width="56"
+    height="56"
+    fill="#c9ded6"
+    stroke="#000000"
+    stroke-width="3"
+  />
+  <text
+    x="32"
+    y="41"
+    fill="#681247"
+    font-family="Arial, sans-serif"
+    font-size="30"
+    font-weight="700"
+    text-anchor="middle"
+  >ap</text>
+  <rect x="49" y="9" width="7" height="7" fill="#b83f7c" />
+</svg>

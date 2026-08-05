@@ -3,132 +3,153 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>recipes • canned sardine curry</title>
-    <link href="styles.css" rel="stylesheet" />
+    <title>canned sardine curry | aron panicker</title>
+    <meta name="description" content="Canned sardine curry, with a tick-off ingredient list and the method I follow." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <p><a href="posts.html">&larr; all posts</a></p>
-    <h1>canned sardine curry</h1>
-    <h2>ingredients</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>2</td>
-          <td>cans</td>
-          <td>sardines in oil</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>1</td>
-          <td>tbsp</td>
-          <td>ginger-garlic paste</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>1</td>
-          <td>pc</td>
-          <td>onion, chopped</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>as needed</td>
-          <td></td>
-          <td>oil</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>as needed</td>
-          <td></td>
-          <td>coconut milk</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>2</td>
-          <td>pcs</td>
-          <td>green chillies, slit</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>as needed</td>
-          <td></td>
-          <td>curry leaves</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>1</td>
-          <td>pc</td>
-          <td>tomato, chopped</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>as needed</td>
-          <td></td>
-          <td>hot water</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>to taste</td>
-          <td></td>
-          <td>salt</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>to taste</td>
-          <td></td>
-          <td>chilli powder</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>to taste</td>
-          <td></td>
-          <td>turmeric powder</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>to taste</td>
-          <td></td>
-          <td>coriander powder</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2>method</h2>
-    <ol>
-      <li>
-        Saute the chopped onion in oil. Add the slit green chillies and curry
-        leaves, then saute the ginger-garlic paste as well.
-      </li>
-      <li>
-        Turn the flame to the lowest setting. Add chilli powder, turmeric
-        powder, and coriander powder, then saute for 1 minute.
-      </li>
-      <li>
-        Add the chopped tomato and stir for 1 minute.
-      </li>
-      <li>
-        Add hot water and bring it to a boil.
-      </li>
-      <li>
-        Drain the oil from the canned sardines, add them to the curry, and let
-        it simmer.
-      </li>
-      <li>
-        Turn off the flame and add some coconut milk.
-      </li>
-      <li>serve hot with rice.</li>
-    </ol>
-    <p class="micro-note">minimal by design. 1mb club mindset.</p>
-    <p class="micro-note">
-      inspired by
-      <a href="https://thorlaksson.com/" target="_blank" rel="noreferrer"
-        >kristófer reykjalín</a
-      >
-    </p>
-    <p>
-      <a href="https://buymeacoffee.com/aronpanicker" target="_blank" rel="noreferrer"
+    <div class="site">
+      <header class="topbar">
+        <p class="brand"><a href="index.html">aron panicker</a></p>
+        <nav aria-label="primary">
+          <ul class="nav">
+            <li><a href="about.html">about</a></li>
+            <li>
+              <a class="active" href="posts.html" aria-current="page">posts</a>
+            </li>
+            <li><a href="links.html">links</a></li>
+            <li><a href="cv.html">cv</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="uses.html">things i use</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <section class="card">
+          <p><a href="posts.html">&larr; all posts</a></p>
+          <h1 class="detail-title">canned sardine curry</h1>
+        </section>
+        <section class="card">
+          <h2>ingredients</h2>
+          <div class="block">
+            <table>
+              <tbody>
+              <tr>
+                <td><input type="checkbox" id="sardines-in-oil-1" /></td>
+                <td>2</td>
+                <td>cans</td>
+                <td><label for="sardines-in-oil-1">sardines in oil</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="ginger-garlic-paste-2" /></td>
+                <td>1</td>
+                <td>tbsp</td>
+                <td><label for="ginger-garlic-paste-2">ginger-garlic paste</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="onion-chopped-3" /></td>
+                <td>1</td>
+                <td>pc</td>
+                <td><label for="onion-chopped-3">onion, chopped</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="oil-4" /></td>
+                <td>as needed</td>
+                <td></td>
+                <td><label for="oil-4">oil</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="coconut-milk-5" /></td>
+                <td>as needed</td>
+                <td></td>
+                <td><label for="coconut-milk-5">coconut milk</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="green-chillies-slit-6" /></td>
+                <td>2</td>
+                <td>pcs</td>
+                <td><label for="green-chillies-slit-6">green chillies, slit</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="curry-leaves-7" /></td>
+                <td>as needed</td>
+                <td></td>
+                <td><label for="curry-leaves-7">curry leaves</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="tomato-chopped-8" /></td>
+                <td>1</td>
+                <td>pc</td>
+                <td><label for="tomato-chopped-8">tomato, chopped</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="hot-water-9" /></td>
+                <td>as needed</td>
+                <td></td>
+                <td><label for="hot-water-9">hot water</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="salt-10" /></td>
+                <td>to taste</td>
+                <td></td>
+                <td><label for="salt-10">salt</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="chilli-powder-11" /></td>
+                <td>to taste</td>
+                <td></td>
+                <td><label for="chilli-powder-11">chilli powder</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="turmeric-powder-12" /></td>
+                <td>to taste</td>
+                <td></td>
+                <td><label for="turmeric-powder-12">turmeric powder</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="coriander-powder-13" /></td>
+                <td>to taste</td>
+                <td></td>
+                <td><label for="coriander-powder-13">coriander powder</label></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="card">
+          <h2>method</h2>
+          <div class="block">
+            <ol>
+              <li>Saute the chopped onion in oil. Add the slit green chillies and curry leaves, then saute the ginger-garlic paste as well.</li>
+              <li>Turn the flame to the lowest setting. Add chilli powder, turmeric powder, and coriander powder, then saute for 1 minute.</li>
+              <li>Add the chopped tomato and stir for 1 minute.</li>
+              <li>Add hot water and bring it to a boil.</li>
+              <li>Drain the oil from the canned sardines, add them to the curry, and let it simmer.</li>
+              <li>Turn off the flame and add some coconut milk.</li>
+              <li>Serve hot with rice.</li>
+            </ol>
+          </div>
+        </section>
+        <footer class="footer">
+          <p class="micro-note">minimal by design. 1mb club mindset.</p>
+          <p class="micro-note">
+            inspired by
+            <a href="https://thorlaksson.com/" target="_blank" rel="noreferrer"
+              >kristófer reykjalín</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://buymeacoffee.com/aronpanicker"
+              target="_blank"
+              rel="noreferrer"
               >donate</a
-            > | <a href="privacy.html">privacy</a> |
-      <a href="now.html">now</a>
-    </p>
+            >
+            | <a href="privacy.html">privacy</a> | <a href="now.html">now</a>
+          </p>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>

@@ -4,6 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>marty supreme | aron panicker</title>
+    <meta
+      name="description"
+      content="Aron Panicker's short review of the film Marty Supreme."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,7 +18,9 @@
         <nav aria-label="primary">
           <ul class="nav">
             <li><a href="about.html">about</a></li>
-            <li><a class="active" href="posts.html">posts</a></li>
+            <li>
+              <a class="active" href="posts.html" aria-current="page">posts</a>
+            </li>
             <li><a href="links.html">links</a></li>
             <li><a href="cv.html">cv</a></li>
             <li><a href="projects.html">projects</a></li>
@@ -48,11 +55,19 @@
         <section class="card">
           <h2>spoilers</h2>
           <div class="block">
-            <p>
-              The ending did not work for me. The version of the character I had
-              been following throughout the film felt disconnected from the
-              person in the final scene.
-            </p>
+            <details class="spoiler">
+              <summary>
+                <span class="spoiler-reveal">spoiler · click to reveal</span>
+                <span class="spoiler-hide">hide spoiler</span>
+              </summary>
+              <div class="spoiler-content">
+                <p>
+                  The ending did not work for me. The version of the character I
+                  had been following throughout the film felt disconnected from
+                  the person in the final scene.
+                </p>
+              </div>
+            </details>
           </div>
         </section>
         <footer class="footer">
@@ -64,10 +79,13 @@
             >
           </p>
           <p>
-            <a href="https://buymeacoffee.com/aronpanicker" target="_blank" rel="noreferrer"
+            <a
+              href="https://buymeacoffee.com/aronpanicker"
+              target="_blank"
+              rel="noreferrer"
               >donate</a
-            > |
-            <a href="privacy.html">privacy</a> | <a href="now.html">now</a>
+            >
+            | <a href="privacy.html">privacy</a> | <a href="now.html">now</a>
           </p>
         </footer>
       </main>

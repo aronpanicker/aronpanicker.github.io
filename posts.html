@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>aron panicker | posts</title>
+    <title>posts | aron panicker</title>
+    <meta
+      name="description"
+      content="Movie and book reviews, travel notes, and recipes by Aron Panicker."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,7 +18,9 @@
         <nav aria-label="primary">
           <ul class="nav">
             <li><a href="about.html">about</a></li>
-            <li><a class="active" href="posts.html">posts</a></li>
+            <li>
+              <a class="active" href="posts.html" aria-current="page">posts</a>
+            </li>
             <li><a href="links.html">links</a></li>
             <li><a href="cv.html">cv</a></li>
             <li><a href="projects.html">projects</a></li>
@@ -23,78 +30,140 @@
       </header>
       <main class="content">
         <section class="card">
-          <h2>all posts</h2>
-          <div class="block">
-            <ul>
-              <li>
-                [movie]
+          <h1>all posts</h1>
+          <div class="block post-browser">
+            <fieldset class="post-filters">
+              <legend>filter posts</legend>
+              <div class="filter-options">
+                <label>
+                  <input
+                    id="filter-all"
+                    type="radio"
+                    name="post-filter"
+                    value="all"
+                    checked
+                  />
+                  <span>all</span>
+                </label>
+                <label>
+                  <input
+                    id="filter-movie"
+                    type="radio"
+                    name="post-filter"
+                    value="movie"
+                  />
+                  <span>movie</span>
+                </label>
+                <label>
+                  <input
+                    id="filter-book"
+                    type="radio"
+                    name="post-filter"
+                    value="book"
+                  />
+                  <span>book</span>
+                </label>
+                <label>
+                  <input
+                    id="filter-blog"
+                    type="radio"
+                    name="post-filter"
+                    value="blog"
+                  />
+                  <span>blog</span>
+                </label>
+                <label>
+                  <input
+                    id="filter-recipe"
+                    type="radio"
+                    name="post-filter"
+                    value="recipe"
+                  />
+                  <span>recipe</span>
+                </label>
+              </div>
+            </fieldset>
+            <ul class="post-list">
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
                 <a href="movie-the-green-ray.html">the green ray</a>
               </li>
-              <li>
-                [movie]
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
                 <a href="movie-cmon-cmon.html">c'mon c'mon</a>
               </li>
-              <li>
-                [movie]
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
                 <a href="movie-sore-a-wife-from-the-future.html"
                   >sore: a wife from the future</a
                 >
               </li>
-              <li>
-                [movie]
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
                 <a href="movie-falling-in-love-like-in-movies.html"
                   >falling in love like in movies</a
                 >
               </li>
-              <li>
-                [movie]
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
                 <a href="movie-no-other-choice.html">no other choice</a>
               </li>
-              <li>
-                [movie]
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
                 <a href="movie-how-to-make-millions-before-grandma-dies.html"
                   >how to make millions before grandma dies</a
                 >
               </li>
-              <li>
-                [movie]
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
                 <a href="movie-perfect-days.html">perfect days</a>
               </li>
-              <li>
-                [movie]
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
                 <a href="movie-marty-supreme.html">marty supreme</a>
               </li>
-              <li>
-                [movie]
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
                 <a href="movie-crime-101.html">crime 101</a>
               </li>
-              <li>
-                [movie]
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
                 <a href="movie-the-shop-around-the-corner.html"
                   >the shop around the corner</a
                 >
               </li>
-              <li>
-                [book]
+              <li data-category="movie">
+                <span class="post-kind">movie</span>
+                <a href="movie-moonrise-kingdom.html">moonrise kingdom</a>
+              </li>
+              <li data-category="book">
+                <span class="post-kind">book</span>
                 <a href="book-fletch.html">fletch</a>
               </li>
-              <li>
-                [blog]
+              <li data-category="book">
+                <span class="post-kind">book</span>
+                <a href="book-ready-player-one.html">ready player one</a>
+              </li>
+              <li data-category="blog">
+                <span class="post-kind">blog</span>
                 <a href="blog-travel-mallorca.html">travel notes: mallorca</a>
               </li>
-              <li>
-                [recipe]
+              <li data-category="recipe">
+                <span class="post-kind">recipe</span>
                 <a href="recipe-chicken-biriyani.html">chicken biriyani</a>
               </li>
-              <li>[recipe] <a href="recipe-egg-rice.html">egg rice</a></li>
-              <li>
-                [recipe]
+              <li data-category="recipe">
+                <span class="post-kind">recipe</span>
+                <a href="recipe-egg-rice.html">egg rice</a>
+              </li>
+              <li data-category="recipe">
+                <span class="post-kind">recipe</span>
                 <a href="recipe-canned-sardine-curry.html"
                   >canned sardine curry</a
                 >
               </li>
-              <li>
-                [recipe]
+              <li data-category="recipe">
+                <span class="post-kind">recipe</span>
                 <a href="recipe-perfectly-cooked-basmati-rice.html"
                   >perfectly cooked basmati rice</a
                 >
@@ -111,10 +180,13 @@
             >
           </p>
           <p>
-            <a href="https://buymeacoffee.com/aronpanicker" target="_blank" rel="noreferrer"
+            <a
+              href="https://buymeacoffee.com/aronpanicker"
+              target="_blank"
+              rel="noreferrer"
               >donate</a
-            > |
-            <a href="privacy.html">privacy</a> | <a href="now.html">now</a>
+            >
+            | <a href="privacy.html">privacy</a> | <a href="now.html">now</a>
           </p>
         </footer>
       </main>

@@ -3,49 +3,85 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>recipes • perfectly cooked basmati rice</title>
-    <link href="styles.css" rel="stylesheet" />
+    <title>perfectly cooked basmati rice | aron panicker</title>
+    <meta name="description" content="How I cook basmati rice so it comes out right every time." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <p><a href="posts.html">&larr; all posts</a></p>
-    <h1>perfectly cooked basmati rice</h1>
-    <h2>ingredients</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>1</td>
-          <td>cup</td>
-          <td>basmati rice</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>1.5</td>
-          <td>cups</td>
-          <td>water</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2>method</h2>
-    <ol>
-      <li>wash the rice.</li>
-      <li>add 1 cup rice and 1.5 cups water to a pot.</li>
-      <li>bring to a boil over high heat.</li>
-      <li>close the lid and cook on medium heat for 7 minutes.</li>
-      <li>open the lid, fluff with a fork, and let it rest.</li>
-    </ol>
-    <p class="micro-note">minimal by design. 1mb club mindset.</p>
-    <p class="micro-note">
-      inspired by
-      <a href="https://thorlaksson.com/" target="_blank" rel="noreferrer"
-        >kristófer reykjalín</a
-      >
-    </p>
-    <p>
-      <a href="https://buymeacoffee.com/aronpanicker" target="_blank" rel="noreferrer"
+    <div class="site">
+      <header class="topbar">
+        <p class="brand"><a href="index.html">aron panicker</a></p>
+        <nav aria-label="primary">
+          <ul class="nav">
+            <li><a href="about.html">about</a></li>
+            <li>
+              <a class="active" href="posts.html" aria-current="page">posts</a>
+            </li>
+            <li><a href="links.html">links</a></li>
+            <li><a href="cv.html">cv</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="uses.html">things i use</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <section class="card">
+          <p><a href="posts.html">&larr; all posts</a></p>
+          <h1 class="detail-title">perfectly cooked basmati rice</h1>
+        </section>
+        <section class="card">
+          <h2>ingredients</h2>
+          <div class="block">
+            <table>
+              <tbody>
+              <tr>
+                <td><input type="checkbox" id="basmati-rice-1" /></td>
+                <td>1</td>
+                <td>cup</td>
+                <td><label for="basmati-rice-1">basmati rice</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="water-2" /></td>
+                <td>1.5</td>
+                <td>cups</td>
+                <td><label for="water-2">water</label></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="card">
+          <h2>method</h2>
+          <div class="block">
+            <ol>
+              <li>Wash the rice.</li>
+              <li>Add 1 cup rice and 1.5 cups water to a pot.</li>
+              <li>Bring to a boil over high heat.</li>
+              <li>Close the lid and cook on medium heat for 7 minutes.</li>
+              <li>Open the lid, fluff with a fork, and let it rest.</li>
+            </ol>
+          </div>
+        </section>
+        <footer class="footer">
+          <p class="micro-note">minimal by design. 1mb club mindset.</p>
+          <p class="micro-note">
+            inspired by
+            <a href="https://thorlaksson.com/" target="_blank" rel="noreferrer"
+              >kristófer reykjalín</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://buymeacoffee.com/aronpanicker"
+              target="_blank"
+              rel="noreferrer"
               >donate</a
-            > | <a href="privacy.html">privacy</a> |
-      <a href="now.html">now</a>
-    </p>
+            >
+            | <a href="privacy.html">privacy</a> | <a href="now.html">now</a>
+          </p>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>

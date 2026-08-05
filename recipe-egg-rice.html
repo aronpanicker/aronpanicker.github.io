@@ -3,93 +3,129 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>recipes • egg rice</title>
-    <link href="styles.css" rel="stylesheet" />
+    <title>egg rice | aron panicker</title>
+    <meta name="description" content="Egg rice, with a tick-off ingredient list and the method I follow." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <p><a href="posts.html">&larr; all posts</a></p>
-    <h1>egg rice</h1>
-    <h2>ingredients</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>3</td>
-          <td>cups</td>
-          <td>cooked rice</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>3</td>
-          <td>pcs</td>
-          <td>eggs</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>1</td>
-          <td>no</td>
-          <td>onion, sliced</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>2</td>
-          <td>cloves</td>
-          <td>garlic, chopped</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>1/2</td>
-          <td>tsp</td>
-          <td>chilli powder</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>1/2</td>
-          <td>tsp</td>
-          <td>MSG</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>2</td>
-          <td>tbsp</td>
-          <td>spring onion, chopped</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>1</td>
-          <td>tbsp</td>
-          <td>oil</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" /></td>
-          <td>1</td>
-          <td>tbsp</td>
-          <td>soy sauce</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2>method</h2>
-    <ol>
-      <li>Heat oil in a pan and stir-fry the onion first until softened.</li>
-      <li>Add the garlic and cook briefly.</li>
-      <li>Add chilli powder and stir well.</li>
-      <li>Add the eggs and scramble them in the pan.</li>
-      <li>Add MSG and soy sauce.</li>
-      <li>Add the cooked rice and stir-fry until everything is mixed well.</li>
-      <li>Finish with spring onion and serve.</li>
-    </ol>
-    <p class="micro-note">minimal by design. 1mb club mindset.</p>
-    <p class="micro-note">
-      inspired by
-      <a href="https://thorlaksson.com/" target="_blank" rel="noreferrer"
-        >kristófer reykjalín</a
-      >
-    </p>
-    <p>
-      <a href="https://buymeacoffee.com/aronpanicker" target="_blank" rel="noreferrer"
+    <div class="site">
+      <header class="topbar">
+        <p class="brand"><a href="index.html">aron panicker</a></p>
+        <nav aria-label="primary">
+          <ul class="nav">
+            <li><a href="about.html">about</a></li>
+            <li>
+              <a class="active" href="posts.html" aria-current="page">posts</a>
+            </li>
+            <li><a href="links.html">links</a></li>
+            <li><a href="cv.html">cv</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="uses.html">things i use</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <section class="card">
+          <p><a href="posts.html">&larr; all posts</a></p>
+          <h1 class="detail-title">egg rice</h1>
+        </section>
+        <section class="card">
+          <h2>ingredients</h2>
+          <div class="block">
+            <table>
+              <tbody>
+              <tr>
+                <td><input type="checkbox" id="cooked-rice-1" /></td>
+                <td>3</td>
+                <td>cups</td>
+                <td><label for="cooked-rice-1">cooked rice</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="eggs-2" /></td>
+                <td>3</td>
+                <td>pcs</td>
+                <td><label for="eggs-2">eggs</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="onion-sliced-3" /></td>
+                <td>1</td>
+                <td>no</td>
+                <td><label for="onion-sliced-3">onion, sliced</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="garlic-chopped-4" /></td>
+                <td>2</td>
+                <td>cloves</td>
+                <td><label for="garlic-chopped-4">garlic, chopped</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="chilli-powder-5" /></td>
+                <td>1/2</td>
+                <td>tsp</td>
+                <td><label for="chilli-powder-5">chilli powder</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="msg-6" /></td>
+                <td>1/2</td>
+                <td>tsp</td>
+                <td><label for="msg-6">MSG</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="spring-onion-chopped-7" /></td>
+                <td>2</td>
+                <td>tbsp</td>
+                <td><label for="spring-onion-chopped-7">spring onion, chopped</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="oil-8" /></td>
+                <td>1</td>
+                <td>tbsp</td>
+                <td><label for="oil-8">oil</label></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="soy-sauce-9" /></td>
+                <td>1</td>
+                <td>tbsp</td>
+                <td><label for="soy-sauce-9">soy sauce</label></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="card">
+          <h2>method</h2>
+          <div class="block">
+            <ol>
+              <li>Heat oil in a pan and stir-fry the onion first until softened.</li>
+              <li>Add the garlic and cook briefly.</li>
+              <li>Add chilli powder and stir well.</li>
+              <li>Add the eggs and scramble them in the pan.</li>
+              <li>Add MSG and soy sauce.</li>
+              <li>Add the cooked rice and stir-fry until everything is mixed well.</li>
+              <li>Finish with spring onion and serve.</li>
+            </ol>
+          </div>
+        </section>
+        <footer class="footer">
+          <p class="micro-note">minimal by design. 1mb club mindset.</p>
+          <p class="micro-note">
+            inspired by
+            <a href="https://thorlaksson.com/" target="_blank" rel="noreferrer"
+              >kristófer reykjalín</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://buymeacoffee.com/aronpanicker"
+              target="_blank"
+              rel="noreferrer"
               >donate</a
-            > | <a href="privacy.html">privacy</a> |
-      <a href="now.html">now</a>
-    </p>
+            >
+            | <a href="privacy.html">privacy</a> | <a href="now.html">now</a>
+          </p>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>
